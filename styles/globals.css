@@ -1,0 +1,90 @@
+@tailwind components;
+@tailwind utilities;
+
+.gradient-red {
+  background: rgb(246, 36, 71);
+
+  background: linear-gradient(
+    90deg,
+    hsla(350, 93%, 61%, 1) 0%,
+    hsla(8, 98%, 59%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(350, 93%, 61%, 1) 0%,
+    hsla(8, 98%, 59%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(350, 93%, 61%, 1) 0%,
+    hsla(8, 98%, 59%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F83D5C", endColorstr="#FD4B2F", GradientType=1 );
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 45%;
+  width: 32px !important;
+  height: 32px !important;
+  background: #fff;
+  border-radius: 50%;
+  color: black !important;
+  font-weight: 700;
+  outline: 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 14px !important;
+}
+
+.swiper-button-prev::after {
+  position: relative;
+  left: -1px;
+}
+
+.swiper-button-next::after {
+  position: relative;
+  left: 1px;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: 10px;
+  right: auto;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: 10px;
+  left: auto;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.mySwiper .swiper-slide {
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.PhoneInputCountry {
+  @apply !w-[60px] border rounded-md !flex !items-center !justify-center !mr-2;
+}
+
+.PhoneInputInput {
+  @apply appearance-none leading-tight font-semibold border rounded-md focus:outline-none py-3 px-4 w-full text-sm;
+}
